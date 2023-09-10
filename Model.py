@@ -9,6 +9,8 @@ from io import StringIO
 from IPython.display import Image, display
 import time
 from sklearnx.metrics import mean_squared_error as mse
+from pandas.core.dtypes.common import classes
+
 
 import ray
 ray.init()
@@ -22,9 +24,6 @@ df_test = df[int(0.8*len(df)):]
 
 cases_train = df_train['cases'].tolist()
 cases_test = df_test['cases'].tolist()
-
-from pandas.core.dtypes.common import classes
-import numpy as np
 
 def to_sequences(seq_size, obs):
     x = []
