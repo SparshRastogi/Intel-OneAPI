@@ -135,5 +135,5 @@ fig.show()
 cl['Difference'] = cl['Original'] - cl['Predicted']
 
 error = (mse(model.predict(x_test),y_test,squared = False)/y_test.mean())*100
-
-model.save('/content/drive/MyDrive/Intel OneAPI/cases_model.keras')
+model_path = '/'
+model.save(model_path)
