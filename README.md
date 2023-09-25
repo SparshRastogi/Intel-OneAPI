@@ -1,15 +1,15 @@
 
-## Project
-Project : PANDEMIC PREDICTX
+# Project
+**Project : PANDEMIC PREDICTX**
+_Pandemic Insights Redefined: Leveraging Machine Learning for Global Health Security_# Team
+**Team: Insight Seekers**
 
-Pandemic Insights Redefined: Leveraging Machine Learning for Global Health Security
-## Team
-Team: Insight Seekers
-## Problem Statement
+# Problem Statement
 The Given Problem
+
 COVID-19 is the fifth documented – and one of the most devastating – pandemic since 1918, As of 5th July 2023, there have been 767,726,861 confirmed cases of COVID-19, including 6,948,764 deaths, reported to WHO. Understanding the trend of how, why, when and where this pandemic spread is essential to tackling similar situations in the future, and making our world a safer place to live in. 
 
-## Datasets Used
+# Datasets Used
 *The Vaccinations Dataset*, sourced from the Centers for Disease Control and Prevention (CDC), a division of the US government, is a comprehensive repository of vital immunization information. This dataset boasts an impressive scale, encompassing a staggering 1,962,781 rows and a rich array of 80 columns. Within its extensive data structure, it meticulously documents the vaccination records of individuals residing in diverse counties across the United States. This invaluable resource plays a pivotal role in tracking and analyzing the distribution and administration of vaccinations.
 
 *The Mobility Dataset*, sourced from Google Mobility Reports, serves as a dynamic reflection of the profound shifts in human activities observed during the course of the pandemic. This expansive dataset, initially comprising a substantial 2,112,154 rows and 17 columns, comes into sharper focus as 122,570 rows and 17 columns specifically pertain to the United States, aligning seamlessly with our specific use case. These meticulously curated data entries provide a comprehensive and granular view of how people's mobility behaviors evolved and adapted throughout the pandemic, offering a valuable resource for analyzing and understanding the impact of various restrictions, public health measures, and societal changes on daily life and movement patterns in the United States.
@@ -18,16 +18,16 @@ COVID-19 is the fifth documented – and one of the most devastating – pandemi
 
 *The Population Dataset*, sourced directly from the US Census Board, furnishes comprehensive information about the demographic landscape of the United States. This dataset offers a detailed account of both population figures and land area measurements for every county across the nation. It serves as a fundamental resource for gaining insights into the size, distribution, and geographic characteristics of the US population, facilitating a deep understanding of regional demographics and their trends. 
 
-## Solution and Approach
+# Solution and Approach
 Our methodology comprises a two-fold approach to address the complex challenges posed by the COVID-19 pandemic:
 
-1. Predictive Modeling with Transformers:
+**1. Predictive Modeling with Transformers:**
 
 To forecast the potential number of future COVID-19 cases over specific time windows (e.g., one week or one month), we employ a state-of-the-art Transformers architecture. This choice is driven by the model's ability to capture long-term dependencies in time series data, which is crucial for mitigating noise and accounting for seasonality in the pandemic's progression. To enhance data quality, we apply a 7-day moving average to smoothen the time series data by removing the noise, which is then used as input sequences for the Transformer model.
 The model is trained on 80 percent of the available data and evaluated on the remaining portion. We evaluate model performance using the Root Mean Square Error (RMSE) relative to the mean of the actual test data values, expressed as a percentage. The resulting error rate is approximately 1.25% for most counties, indicating a high level of predictive accuracy.
 Error = (RMSE of model on test data/ Mean of actual values of test data)*100
 
-2. Risk Assessment and Visualization:
+**2. Risk Assessment and Visualization:**
 
 Our approach extends to making predictions for all counties in the United States for the next six months using the trained model. This can be similarly done for India as well. The predicted data is then visualized on an interactive map platform using Plotly. This map serves as a risk assessment tool, displaying the per capita probability of infection (risk) for each county.
 
