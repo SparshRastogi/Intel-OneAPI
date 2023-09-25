@@ -1,7 +1,9 @@
 
 # Project
 **Project : PANDEMIC PREDICTX**
-_Pandemic Insights Redefined: Leveraging Machine Learning for Global Health Security_# Team
+_Pandemic Insights Redefined: Leveraging Machine Learning for Global Health Security_ 
+
+# Team
 **Team: Insight Seekers**
 
 # Problem Statement
@@ -43,42 +45,39 @@ Thus, we use Transformer architecture to make predictions using the data.
 
 Some of the advantages of using transformer architecture over time-series are:
 
-1) Attention mechanisms: Transformers use self-attention mechanisms to weigh the importance of different elements in the input sequence when making predictions. This allows them to capture long - range dependencies and ignore noisy or irrelevant data points.
+1) **Attention mechanisms:** Transformers use self-attention mechanisms to weigh the importance of different elements in the input sequence when making predictions. This allows them to capture long - range dependencies and ignore noisy or irrelevant data points.
 
-2) Parallelization: Transformers can process data in parallel, which makes them efficient for training on large datasets like ours.
+2) **Parallelization:** Transformers can process data in parallel, which makes them efficient for training on large datasets like ours.
 
-3) Transformers can incorporate temporal information through positional encodings which helps them understand the sequential nature of time series data.
+3) Transformers can incorporate **temporal information** through positional encodings which helps them understand the **sequential nature of time series data**.
 
 Apart from this, to identify correlations between various factors and case numbers, we employ the Kendall Tau correlation method. This analysis helps us understand the impact of different mobility factors on case spikes, empowering government bodies to implement targeted restrictions on activities that contribute to case surges while permitting those with minimal impact. This approach enhances our understanding of the pandemic's spread within specific regions, facilitating more effective containment strategies.
 
 ## Usabilities
-1) _Outbreak prediction based on disease spread rate_
-
+**1) _Outbreak prediction based on disease spread rate_**
 
 Using the datasets mentioned, the origin of it in the country and the R number for a microbe-generated disease like Covid, geography-based prediction of the spread of the disease has been predicted, which can help in formulating suitable plans for implementing lockdown measures by the Government.
 
 
-2) _Resource allocation_
+**2) _Resource allocation_**
 
 
 Using the spread rate predicted and the population density of various districts, the government can estimate the allocation and distribution of resources such as food and medicine. This prediction will help district authorities adequately prepare and equip people in each district to effectively navigate through the lockdown period.
 
-3) _Transportation route optimisation based on the google mobility report_
-
+**3) _Transportation route optimisation based on the google mobility report_**
 
 By utilizing the Google Mobility report and integrating it with the Google Maps API, we can suggest optimal transportation routes to citizens and government vehicles likewise. These routes can be recommended in order to avoid hotspots and ensure the efficient transportation and distribution of essential resources to different locations.
 
 Due to budget constraints and limited project resources, we made the decision not to implement the Google Maps API in this project since it is a paid requirement. We are committed to delivering a high-quality project within the given constraints and have sought to maximize the available resources to provide meaningful insights and functionality to our users. But using Google Maps API could have proven to be a huge boost to our project.
 
-4) _Helping hospitals prepare & managing manufacturers' supply chain_
+**4) _Helping hospitals prepare & managing manufacturers' supply chain_**
 
 Using the R number and the rates at which patients need treatment, an estimate of patient influx can be suggested to the hospitals by the governemnt. This will help them be better prepared with medical resources like hospital beds, masks etcetera.
 
 With our solutions’ help, the Government can plan out appropriate ways to obtain resources from nearby manufacturing units and managing their supply chain. This can be done by obtaining a nation-wide data of hospital bed manufacturers and their weekly capacity.
 
 
-5) _Ensuring Government preparedness to tackle mental health & abuse case_
-
+**5) _Ensuring Government preparedness to tackle mental health & abuse case_**
 
 Reports suggest a significant rise in cases of mental health issues, child abuse and domestic violence cases. With our solutions, once the Government is aware of the predicted threat of lockdown, the authorities can put adequate resources in place considering factors such as lockdown duration, AQI, financial strata and more of an area. In this way, we can help the Government be better prepared with the human resources required to tackle such issues. This includes special toll-free numbers for mental health experts, police personnel etc.
 ## Results
@@ -93,7 +92,7 @@ https://www.gstatic.com/covid19/mobility/Global_Mobility_Report.csv
 https://data.cdc.gov/api/views/8xkx-amqh/rows.csv
 
 ## Technologies Used
-Technologies 
+
 
 Transformers
 
